@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "e98304e69937917a",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6b218deb8b64199",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Тремор/0. Вход/Том/0. Вход. Том. Презентация..md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3384841e80466688",
+    "type": "split",
+    "children": [
+      {
+        "id": "0eea02fc2b1545fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02ec8065307c764c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "23a26a6dcf6db0a6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 262
+  },
+  "right": {
+    "id": "3732513f9fe6233b",
+    "type": "split",
+    "children": [
+      {
+        "id": "58fa0bc9d1b4d2a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3b1754ca739ad89",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Тремор/0. Вход/Том/0. Вход. Том. Презентация..md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b6b218deb8b64199",
+  "lastOpenFiles": [
+    "Тремор/0. Вход/Том/0. Вход. Том. Презентация..md",
+    "Тремор/0. Вход/Том/2. Вход. Том. Татс и Дина..md",
+    "Тремор/0. Вход/Том/All guns loaded.md",
+    "Тремор/0. Вход/Том/Вход. Том. огрызки.md",
+    "Тремор/0. Вход/Том/3. Вход. Том. К8..md",
+    "Тремор/0. Вход/Том/1. Вход. Том. Суперпозиция..md",
+    "Тремор/0. Вход/томас All guns loaded/3. Вход. Том. К8..md",
+    "Тремор/0. Вход/томас All guns loaded/2. Вход. Том. Татс и Дина..md",
+    "Тремор/0. Вход/томас All guns loaded/1. Вход. Том. Суперпозиция..md",
+    "Тремор/0. Вход/томас All guns loaded/0. Вход. Том. Презентация..md"
+  ]
+}

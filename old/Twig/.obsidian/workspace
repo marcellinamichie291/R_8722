@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "e5777360b89c4d34",
+    "type": "split",
+    "children": [
+      {
+        "id": "3fd26eafc0630c20",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "idea.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ce2ad7d9b641d69c",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee5ab90f3cf5835b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c302ac0827de76c0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "21668044a7c7fba4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Редхема",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 175.0036334991455
+  },
+  "right": {
+    "id": "c88c1a41bd3d1af4",
+    "type": "split",
+    "children": [
+      {
+        "id": "5b294e698f28bfef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1cf4c07ac375cd86",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "idea.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "3fd26eafc0630c20",
+  "lastOpenFiles": [
+    "idea.md",
+    "Player/Project/Lambs/Jamie.md",
+    "Player/Project/Lambs/Gordon.md",
+    "Player/Project/Lambs/Сильвестр(Sy)_Wyvern.md",
+    "Player/Project/Lambs/Ashton Le Deux.md",
+    "Player/Project/Lambs/Ashton.md",
+    "Player/Project/Lambs/Evette.md",
+    "Player/Project/Lambs/Helen_Galatea.md",
+    "Player/Project/Lambs/Lambs.md",
+    "Player/Project/Lambs/Lillian.md"
+  ]
+}

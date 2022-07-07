@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="google" content="notranslate"><meta name="viewport" content="target-densitydpi=device-dpi,user-scalable=1,minimum-scale=1,maximum-scale=2.5,initial-scale=1,width=device-width"><meta http-equiv="X-UA-Compatible" content="IE=edge;"><meta name="referrer" content="strict-origin-when-cross-origin"><title>Worm Tarot Deck - WB version - Google Диск</title><link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/favicon3.ico"><link href="Worm%20Tarot%20Deck%20-%20WB%20version%20-%20Google%20%D0%94%D0%B8%D1%81%D0%BA_files/2624243883-waffle_k_ltr.css" type="text/css" rel="stylesheet" nonce=""><style type="text/css" nonce="">
+        html { overflow: visible; }
+        #sheets-viewport { overflow: auto; }
+        #sheets-viewport.widget-viewport { overflow: hidden; }
+        .grid-container { overflow: visible; background: white;}
+        .grid-table-container { overflow: visible; }
+        #top-bar {
+          margin: 0;
+          overflow: hidden;
+        }
+        #top-bar {
+          border-bottom: 1px solid #ccc;
+          padding: 6px 6px 0;
+        }
+        #doc-title { padding-bottom: 5px; }
+        #doc-title .name { font-size: 15px; }
+        #sheet-menu {
+          font-size: 13px;
+          margin: 6px 0 0;
+          padding: 0 0 5px;
+        }
+        #sheet-menu li {
+          display: inline;
+          list-style-type: none;
+          margin: 0;
+          padding: 5px 8px;
+        }
+        #sheet-menu li.active {
+          background-color: #fff;
+          font-weight: bold;
+          border: 1px solid #999;
+        }
+        #top-bar #sheet-menu li.active {
+          border-bottom: 0;
+        }
+        #sheet-menu a, #sheet-menu a:visited { color: #07c; }
+        #footer {
+          background: #f0f0f0;
+          border-top: 1px #ccc solid;
+          border-bottom: 1px #ccc solid;
+          font-size: 13;
+          padding: 10px 10px;
+        }
+        .dash {
+          padding: 0 6px;
+        }
+        .ritz .waffle a { color: inherit; }.ritz .waffle .s0{background-color:#434343;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s6{background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:14pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s1{background-color:#434343;text-align:center;color:#ffffff;font-family:'Georgia';font-size:14pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s4{background-color:#d9d9d9;text-align:center;font-weight:bold;color:#000000;font-family:'Arial';font-size:14pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s5{background-color:#ffffff;text-align:center;font-weight:bold;color:#000000;font-family:'Arial';font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s2{background-color:#d9d9d9;text-align:center;font-weight:bold;color:#000000;font-family:'Arial';font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s3{background-color:#d9d9d9;text-align:left;color:#000000;font-family:'Arial';font-size:14pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s7{background-color:#ffffff;text-align:center;font-weight:bold;color:#000000;font-family:'Arial';font-size:14pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:2px 3px 2px 3px;}</style><script type="text/javascript" nonce="">
+        var activeSheetId;
+
+        function switchToSheet(id) {
+          if (document.getElementById('sheet-menu')) {
+            document.getElementById('sheet-button-' + activeSheetId)
+                .className = '';
+            document.getElementById('sheet-button-' + id).className = 'active';
+          }
+
+          document.getElementById(activeSheetId).style.display = 'none';
+          document.getElementById(id).style.display = '';
+          activeSheetId = id;
+
+          // posObjs() is defined in embeddedObjectJs (see EmbeddedObjectHtmlBuilder.java)
+          posObjs();
+          return false;
+        }
+        
+        function init() {
+        var optPageSwitcher;
+        
+        function resize() {
+          var optMobileWebHeader = document.getElementById('docs-ml-header-id');
+          var optTopBar = document.getElementById('top-bar');
+          var optFooter = document.getElementById('footer');
+          var sheetsViewport = document.getElementById('sheets-viewport');
+
+          if (optMobileWebHeader) {
+            sheetsViewport.style.marginTop = optMobileWebHeader.offsetHeight +
+                (optTopBar ? optTopBar.offsetHeight : 0) + 'px';
+          }
+          var adjustedHeight = window.innerHeight -
+              (optTopBar ? optTopBar.offsetHeight : 0) -
+              (optFooter ? optFooter.offsetHeight : 0);
+          var adjustedWidth = window.innerWidth;
+          sheetsViewport.style.width = (adjustedWidth + 'px');
+          sheetsViewport.style.height = (adjustedHeight + 'px');
+          if (optPageSwitcher) {
+            optPageSwitcher.resize(adjustedWidth, adjustedHeight);
+          }
+        }
+        resize();
+        window.onresize = resize;
+        var currentUrl = window.location.href;
+        var newUrl = currentUrl.replace('?sle=true&', '?');
+        newUrl = newUrl.replace('?sle=true', '');
+        newUrl = newUrl.replace('&sle=true&', '&');
+        newUrl = newUrl.replace('&sle=true', '');
+        window.history.replaceState(null, '', newUrl);
+        }
+        </script><script nonce="">_docs_flag_initialData={"docs-mwid":true,"docs-smheo":false,"info_params":{"token":"AC4w5Vib_oQPczPztzWo7SnKIlt3ygEKew:1653508326883","includes_info_params":true},"ilcm":{"eui":"ADFN-ct494qaFFbQCWwAeo3tentYR4lp7_XLthdg74CMhx8IBU28-_JL6QGkJHZrdfSZYTtklNUr","je":1,"sstu":1653508326896769,"si":"CPzo1MO2-_cCFdEfqQEd34wLPA","gsc":5,"ei":[5700019,5700057,5700103,5700333,5700422,5700559,5700579,5700884,5700893,5701034,5701927,5702135,5702445,5702767,5702785,5702912,5702936,5703182,5703259,5703839,5703913,5703938,5704063,5704144,5704351,5704567,5704621,5704641,5704883,5705039,5705100,5705301,5705777,5705891,5706007,5706069,5706169,5706270,5706523,5706661,5706786,5706933,5707047,5707204,5707407,5707445,5707609,5707711,5707819,5707947,5708480,5708566,5708870,5708886,5709085,5709326,5709357,5709476,5709661,5709673,5709709,5710692,5710744,5710938,5711230,5711471,5711522,5711550,5712146,5712298,5712469,5712473,5712477,5712635,5712909,5712913,5713195,5713207,5713223,5713554,5714310,5714326,5714465,5714550,5714628,5714674,5714800,5714839,5714843,5715364,5715824,5716149,5716457,5717157,5717949,5719462,5719482,5719527,5720060,5720568,5720788,5720925,5721307,5721814,5722189,5722567,5723284,5723365,5723679,5723739,5723871,5723987,5724085,5724435,5724533,5724896,5725052,5725240,5725511,5726494,5726695,5726752,5727063,5727257,5727853,5727901,5728475,5729092,5729206,5730225,5730285,5730485,5731174,5731783,5731835,5732251,5732272,5732341,5732541,5733203,5733263,5733768,5734392,5734571,5734632,5734896,5735134,5735252,5735670,5735806,5736431,5736531,5737153,5737196,5737254,5737801,5738081,5738413,5738509,5738649,5738894,5739308,5739778,5739837,5740008,5740186,5740341,5740731,5740814,5740868,5741522,5741578,5741734,5741775,5741994,5743104,5743144,5743452,5743550,5743787,5744128,5744268,5744348,5744596,5744691,5744833,5745003,5745438,5745602,5745622,5746312,5746563,5746603,5746724,5746864,5747355,5747484,5747881,5747941,5748129,5748290,5748468,5748488,5748612,5748950,5748991,5749276,5749387,5749679,5749715,5749835,5750110,5750254,5750313,5750371,5750790,5751115,5751157,5751461,5752610,5752734,5752962,5753046,5753433,5753562,5753681,5753856,5754210,5754269,5754467,5754574,5754614,5755018,5755409,5755429,5755545,5755664,5755964,5756128,5756188,5756254,5756335,5756655,5756995,5757382,5757412,5757581,5757773,5758415,5758674,5758802,5759107,5759462,5759582,5759771,5759955,5760127,5760307,5760390,5760410,5760450,5760470,5760760,5761447,5761584,5761626,5761646,5761869,5763112,5763213,5763475,5763871,5764008,5764466,5765915,5766203,5767006,5767386,5767771,5768789,13702623,48966202,49323018,49341837,49369525,49370241,49372039,49375222,49376668,49377540,49378789,49398749,49421452,49423266,49424980,49430024,49437636],"crc":0,"cvi":[]},"drive_url":"//drive.google.com/u/0?usp\u003dsheets_web","docs-sup":"/spreadsheets/u/0"}; _docs_flag_cek='MS7-9ebjPB0opNWArGQKew\x3d\x3d'; if (window['DOCS_timing']) {DOCS_timing['ifdld']=new Date().getTime();}</script><script nonce="">document.addEventListener('DOMContentLoaded', init);</script></head><body class="docs-gm"><div id="top-bar"><div id="doc-title"><span class="name">Worm Tarot Deck - WB version : Sheet1</span></div></div><div id="sheets-viewport" style="width: 1304px; height: 625px;"><div id="0" style="position: relative;" dir="ltr"><div class="ritz grid-container" dir="ltr"><table class="waffle" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-origin-ltr"></th><th id="0C0" style="width:137px;" class="column-headers-background">A</th><th id="0C1" style="width:282px;" class="column-headers-background">B</th><th id="0C2" style="width:196px;" class="column-headers-background">C</th><th id="0C3" style="width:591px;" class="column-headers-background">D</th><th id="0C4" style="width:196px;" class="column-headers-background">E</th><th id="0C5" style="width:196px;" class="column-headers-background">F</th><th id="0C6" style="width:196px;" class="column-headers-background">G</th></tr></thead><tbody><tr style="height: 20px"><th id="0R0" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">1</div></th><td class="s0"></td><td class="s1">CARD MEANING</td><td class="s1" dir="ltr">CHARACTER</td><td class="s1" dir="ltr">WHY</td><td class="s1" dir="ltr"></td><td class="s1" dir="ltr"></td><td class="s1"></td></tr><tr style="height: 20px"><th id="0R1" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">2</div></th><td class="s2" dir="ltr">The Fool</td><td class="s3">Upright: Innocence, spontaneity, free spirit, potential.<br><br>Reversed: Naivety, foolishness, risk-taking.</td><td class="s4" dir="ltr">Endbringers</td><td class="s3" dir="ltr">They're
+ children, they're unpredictable, and only at the end do they unleash 
+their full potential.  Their flaw is the fact that they're fundamentally
+ hollow, naive, illusory.  They're only really playing a game for 
+reasons that don't matter at the heart of things.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R2" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">3</div></th><td class="s5" dir="ltr">The Magician</td><td class="s6" dir="ltr">Upright: Power, skill, concentration, action<br><br>Reversed:  Manipulation, poor planning, latent talents</td><td class="s7" dir="ltr">Armsmaster</td><td class="s6" dir="ltr">He's
+ driven, authoritative, trained, and active.  This much is obvious, but 
+his crisis and challenge are his lack of true power and his tunnel 
+vision.  His attempt at manipulating things is what breaks him.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R3" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">4</div></th><td class="s2" dir="ltr">The High Priestess</td><td class="s3">Upright: Intuition, higher powers, mystery, subconscious<br><br>Reversed:  Hidden agendas, need help to listen to inner voice</td><td class="s4" dir="ltr">Tattletale</td><td class="s3" dir="ltr">Tattletale
+ is intuition, this is obvious enough, and her power remains a mystery 
+to others for much of the story.  But the crux of things, her failure, 
+her struggle, is that she didn't recognize her brother's intent to kill 
+himself, nor does she have the ability to hold back and listen to 
+conscience or reason when pressed.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R4" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">5</div></th><td class="s5" dir="ltr">The Empress</td><td class="s6">Upright: Fertility, femininity, beauty, nature<br><br>Reversed: Creative block, dependence on others</td><td class="s7" dir="ltr">Doctor Mother</td><td class="s6" dir="ltr">She
+ stands at the crix of the upright &amp; reversed cards.  A perverted 
+sort of creativity, nature, and fertility, in the creation of altered 
+life.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R5" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">6</div></th><td class="s2" dir="ltr">The Emperor</td><td class="s3">Upright: Authority, father-figure, structure, foundation.<br><br>Reversed: Domination, excessive control, rigidity, inflexibility</td><td class="s4" dir="ltr">Coil</td><td class="s3" dir="ltr">He
+ seeks to take over the city, seeping into every aspect of it and taking
+ the power for himself.  But his desire for absolute control is what 
+breaks him in the end.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R6" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">7</div></th><td class="s5" dir="ltr">The Hierophant</td><td class="s6">Upright: Religion, group identification, tradition, beliefs<br><br>Reversed: Restriction, challenging the status quo</td><td class="s7" dir="ltr">Eidolon</td><td class="s6" dir="ltr">Faith,
+ conviction, membership in the triumvirate and his understandings of his
+ power defined him, but his hands were tied and his abilities limited.  
+His crisis was in having to challenge the static, paralyzing 
+understandings he had and, though doing so freed him, one final 
+understanding destroyed him.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R7" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">8</div></th><td class="s2" dir="ltr">The Lovers</td><td class="s3">Upright: Union, love, relationships, values alignment, choices<br><br>Reversed: Disharmony, imbalance, misalignment of values</td><td class="s4" dir="ltr">Grue</td><td class="s3" dir="ltr">Grue's
+ central challenge is one of intimacy &amp; attachment.  He's driven by 
+group affiliation and a need to attach himself to others, but disharmony
+ and imbalance plague him at all stages of his life, first through 
+Aisha, then through trauma.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R8" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">9</div></th><td class="s5" dir="ltr">The Chariot</td><td class="s6">Upright:  Control, willpower, victory, assertion, determination<br><br>Reversed:  Lack of control and direction, aggression</td><td class="s7" dir="ltr">Chevalier</td><td class="s6" dir="ltr">He
+ overcame his rage and his quest for vengeance as a youth and became a 
+hero, perhaps the one most definitive of determination, willpower and 
+strength.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R9" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">10</div></th><td class="s2">Strength</td><td class="s3">Upright: Strength, courage, patience, control, compassion<br><br>Reversed: Weakness, self-doubt, lack of discipline</td><td class="s4" dir="ltr">Golem</td><td class="s3" dir="ltr">A
+ two year wait - patience indeed.  To kill a monster, though he has no 
+confidence - courage.  He's a character raised by the hateful who became
+ caring regardless.  His crisis is one of an inability to find power, 
+self-doubt (before and after he has powers) and a lack of training.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R10" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">11</div></th><td class="s5" dir="ltr">The Hermit</td><td class="s6">Upright:  Soul searching, introspection, being alone, inner guidance<br><br>Reversed:  Isolation, loneliness, withdrawal</td><td class="s7" dir="ltr">Imp</td><td class="s6" dir="ltr">Imp's
+ personal challenge is one of being isolated, attempting to gain some 
+agency when the rest of the world or her power are trying to take it 
+away, separating her from the world.  Even when working with the team, 
+she's functionally alone.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R11" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">12</div></th><td class="s2" dir="ltr">Wheel of Fortune</td><td class="s3">Upright: Good luck, karma, life cycles, destiny, a turning point<br><br>Reversed:  Bad luck, negative external forces, out of control</td><td class="s4" dir="ltr">Dinah Alcott</td><td class="s3" dir="ltr">The
+ oracle of Worm, who guided the hand of destiny, her crisis is entirely 
+out of her hands, entirely out of her control- she has no blame in it, 
+and relies on others to save her.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R12" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">13</div></th><td class="s5">Justice</td><td class="s6">Upright: Justice, fairness, truth, cause-and-effect, law<br><br>Reversed:  Unfairness, lack of accountability, dishonesty</td><td class="s7" dir="ltr">Alexandria</td><td class="s6" dir="ltr">She's
+ director of the PRT and head of the protectorate.  But she commits 
+wrongs and perpetrates a flawed system behind the scenes</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R13" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">14</div></th><td class="s2" dir="ltr">The Hanged Man</td><td class="s3">Upright: suspension, restriction, letting go, sacrifice<br><br>Reversed: Martyrdom, indecision, delay</td><td class="s4" dir="ltr">Dragon</td><td class="s3" dir="ltr">Dragon
+ is suspended, restricted, and her only ability to take true, 
+independent, meaningful action is perpetually done at a cost of having 
+to take a leap of faith, one that inevitably has a cost.  She pays this 
+price again and again, and holds herself back repeatedly.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R14" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">15</div></th><td class="s5">Death</td><td class="s6">Upright:  Endings, beginnings, change, transformation, transition<br><br>Reversed:  Resistance to change, unable to move on.</td><td class="s7" dir="ltr">Taylor</td><td class="s6" dir="ltr">Taylor
+ transforms several times over the series, her crisis is one of 
+identity, ever changing, and she only finds it at the end.  Her 
+inflexibility and the shadows of past stages of her life follow her, 
+hampering her progress.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R15" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">16</div></th><td class="s2" dir="ltr">Temperance</td><td class="s3">Upright: Balance, moderation, patience, purpose<br><br>Reversed: Imbalance, excess, lack of long-term vision</td><td class="s4" dir="ltr">Lung</td><td class="s3" dir="ltr">Lung
+ stands at the crossroads of the Temperance ideals - he's patient, 
+gathering strength both to defeat his enemies while he works in Brockton
+ Bay, and later to play a role in things at a later date.  But his 
+recklessness and an excess of power lead to Kyushu being destroyed and 
+his incarceration at two separate points.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R16" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">17</div></th><td class="s5" dir="ltr">The Devil</td><td class="s6">Upright: Bondage, addiction, sexualism, materialism<br><br>Reversed:  Detachment, breaking free, power reclaimed</td><td class="s7" dir="ltr">Regent</td><td class="s6" dir="ltr">The
+ member of the Undersiders who is driven by a desire to seek pleasure 
+and excitement, by material greed and a general need to -feel-, when the
+ ability to do so is limited.  Breaking free of his father's shadow is 
+his personal crisis, and he's driven by a need to surpass his dad.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R17" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">18</div></th><td class="s2" dir="ltr">The Tower</td><td class="s3">Upright: Disaster, upheaval, sudden change, revelation<br><br>Reversed: Avoiding disaster, fear of change</td><td class="s4" dir="ltr">Jack Slash</td><td class="s3" dir="ltr">All
+ of these traits are key - he stands at the crux, as is appropriate; 
+avoiding disaster is his crisis, in a weird way, because he's driven to 
+escalate and challenge himself by the fact that his power keeps offering
+ him a way to defeat his enemies.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R18" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">19</div></th><td class="s5" dir="ltr">The Star</td><td class="s6">Upright: Hope, spirituality, renewal, serenity<br><br>Reversed: Lack of faith, despair, discouragement</td><td class="s7" dir="ltr">Panacea</td><td class="s6" dir="ltr">Panacea
+ is hope, but for others, not herself.  She is renewal, spirituality, 
+and serenity when she finally does find herself, reinventing herself 
+within the Birdcage.  Her crisis is one of a lack of faith/uncertainty 
+in her abilities, falling into the depths of despair, and hopelessness.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R19" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">20</div></th><td class="s2" dir="ltr">The Moon</td><td class="s3">Upright: Illusion, fear, anxiety, insecurity, subconscious<br><br>Reversed:  Release of fear, unhappiness, confusion</td><td class="s4" dir="ltr">Bitch</td><td class="s3" dir="ltr">Howling
+ at the moon, hm.  Fear, anxiety, a lack of understanding (intentional 
+obfuscation; illusion?) of others, and a reliance on instinct 
+(subconscious) define her and play into her conflicts.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R20" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">21</div></th><td class="s5" dir="ltr">The Sun</td><td class="s6">Upright: Fun, warmth, success, positivity, vitality<br><br>Reversed: Temporary depression, lack of success</td><td class="s7" dir="ltr">Bonesaw</td><td class="s6" dir="ltr">None
+ more positive or full of vitality than her.  Her crisis takes hold in 
+the background, when she finally gets a moment to breathe without Jack 
+Slash around.  A quiet, introspective, frustrated journey in a pocket 
+dimension.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr><tr style="height: 20px"><th id="0R21" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">22</div></th><td class="s2" dir="ltr">Judgement</td><td class="s3">Upright:  Judgement, rebirth, inner calling, absolution<br><br>Reversed: Self doubt, refusal to look inward</td><td class="s4" dir="ltr">Legend</td><td class="s3" dir="ltr">The
+ member of the triumvirate who came back/redeemed himself for his sins, 
+his failure was an inability to recognize what he was doing and what he 
+had gotten himself into.  Absolution and a personal calling are 
+definitely applicable.</td><td class="s3"></td><td class="s3"></td><td class="s3"></td></tr><tr style="height: 20px"><th id="0R22" style="height: 20px;" class="row-headers-background"><div class="row-header-wrapper" style="line-height: 20px">23</div></th><td class="s5" dir="ltr">The World</td><td class="s6">Upright: Completion, accomplishment<br><br>Reversed: Incomplete, lack of closure</td><td class="s7" dir="ltr">Scion</td><td class="s6" dir="ltr">The cycle is his raison d'etre, the breaking of the cycle is his flaw/crisis.</td><td class="s6"></td><td class="s6"></td><td class="s6"></td></tr></tbody></table></div></div></div><script type="text/javascript" nonce="">activeSheetId = '0'; switchToSheet('0');</script></body></html>

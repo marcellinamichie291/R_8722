@@ -1,0 +1,217 @@
+R:\xubuntu, [15.07.2021 11:12]
+https://linux-faq.ru/page/10-operaciy-kotorie-sleduet-vipolnit-srazu-je-posle-ustanovki-distributiva-xubuntu
+
+R:\xubuntu, [01.08.2021 07:43]
+скорость убунты 20.04
+sudo systemctl disable apparmor.service
+sudo systemctl disable apport.service
+sudo systemctl disable avahi-daemon.service
+sudo systemctl disable cgmanager.service
+sudo systemctl disable colord.service
+sudo systemctl disable ModemManager.service
+sudo systemctl disable speech-dispatcher.service
+
+R:\xubuntu, [04.08.2021 10:39]
+https://help.ubuntu.ru/wiki/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5_%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8_%D0%B2_xfce
+
+R:\xubuntu, [04.08.2021 10:59]
+https://forum.ubuntu.ru/index.php?topic=252896.new#new
+
+R:\xubuntu, [04.08.2021 11:00]
+https://docs.xubuntu.org/1704/user/ru/xubuntu-documentation-A4.pdf
+
+R:\xubuntu, [05.08.2021 11:01]
+https://help.ubuntu.ru/wiki/%D0%B3%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5_%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8_%D0%B2_xfce
+
+R:\xubuntu, [05.08.2021 11:16]
+https://ixnfo.com/kak-sdelat-zagruzochnuyu-fleshku-s-xubuntu.html
+
+R:\xubuntu, [05.08.2021 11:40]
+https://losst.ru/kak-sdelat-zagruzochnuyu-fleshku-ubuntu#%D0%9A%D0%B0%D0%BA_%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C_%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BE%D1%87%D0%BD%D1%83%D1%8E_%D1%84%D0%BB%D0%B5%D1%88%D0%BA%D1%83_Ubuntu_%D0%B2_Linux
+https://www.balena.io/etcher/
+установка на флешку
+https://info-comp.ru/install-xubuntu-20-04
+
+R:\xubuntu, [05.08.2021 16:36]
+load firefox > залогинился в акк огнелиса > загрузил бекапы огнелисаload telega > sudo snap install telegram-desktop > add acc 3
+позволил обновлениям скачаться
+sudo apt install lm-sensors
+sudo sensors-detect
+y
+sudo apt install ttf-mscorefonts-installer
+Y
+sudo apt-get install wine
+wget http://app.prntscr.com/build/setup-lightshot.exe
+wine ./setup-lightshot.exe
+sudo apt install ffmpeg
+sudo apt install v4l2loopback-dkms
+sudo add-apt-repository ppa:obsproject/obs-studio
+
+sudo apt install obs-studio
+gnome-system-monitor //через центр приложений
+gsettings set com.canonical.Unity.Lenses remote-content-search none //?????
+
+sudo apt install fancontrol
+sudo pwmconfig
+y > 4
+sudo systemctl enable fancontrol
+sudo systemctl start fancontrol
+
+sudo apt install pulseaudio 
+//на вкладке "устройство ввода" в трёх ячейках указал "встроенное аудио"
+// и нажал кнопку "заглушить звук" она почти не заметна
+arecord -f cd -d 10 test-mic.wav > aplay test-mic.wav // тест майк
+pavucontrol
+
+sudo apt install gnome-tweaks //lightshot в авто загрузку ставится через gnome-tweaks
+sudo apt-get update
+IDEA EDU kik ideaComu load
+sudo apt-get install default-jdk
+sudo apt install maven
+sudo ln -s /opt/apache-maven-3.8.1 /opt/maven
+sudo touch /etc/environment.d/100-maven.conf
+sudo nano /etc/environment.d/100-maven.conf
+//
+JAVA_HOME=/usr/lib/jvm/default-java
+M2_HOME=/opt/maven
+MAVEN_HOME=/opt/maven
+PATH=/opt/maven/bin:${PATH}
+//
+ctrl+V > ctrl+x > y > enter
+mvn archetype:generate
+sudo apt install git
+git config --global user.name "r0-nook"
+git config --global user.email wodrom@gmail.com
+
+скачать > запустить терминал в загрузках
+chmod +x ./Obsidian-0.12.12.AppImage
+запустить даблкликом
+
+R:\xubuntu, [05.08.2021 16:36]
+гуд инфо
+контрал шифт > свернуть суперД > открыть суперF
+паст шифтИнсерт > copy shiftHome
+cat /proc/meminfo //озу ин терминал
+Ctrl+Alt+Esc - Убийца
+это комбинация клавиш - двоеточие для вход в режим ввода команд, w - записать, q - выход
+gnome-tweaks
+sudo touch /etc/environment.d/100-maven.conf // создание файла по адресу
+sudo nano // редактировать файл
+
+удаление
+ sudo apt-get autoremove default-jdk openjdk
+ sudo apt-get autoremove default-jdk openjdk-11-jdk
+sudo apt-get remove default-jre
+sudo apt-get purge openjdk*
+
+
+Вся конфигурация, созданная в Maven будет хранится в файле pom.xml. Вы можете посмотреть его содержимое:
+nano pom.xml
+Исходники программы находятся в папке src/main/java/com/losst/App.java:
+cat src/main/java/com/losst/App.java
+
+git config
+git config --global user.name "r0-nook"
+git config --global user.email wodrom@gmail.com
+git config --list
+
+R:\xubuntu, [08.08.2021 19:12]
+sudo apt install vokoscreen-ng
+
+R:\xubuntu, [08.08.2021 19:12]
+https://github.com/vkohaupt/vokoscreenNG
+
+R:\xubuntu, [10.08.2021 14:45]
+вопросы таймера
+sudo apt install vlc-bin
+для запуска сигнала таймера через плееер без запуска интерфейса
+не сработало
+
+R:\xubuntu, [10.08.2021 14:48]
+решение для таймера
+sleep 10s && vlc /home/r0/r0_Act_xubuntu/треки0/выпущены/4.wma "Timer" "alarm alarm!"
+или
+Gnome Clocks
+
+R:\xubuntu, [12.08.2021 12:58]
+sublime
+
+R:\xubuntu, [15.08.2021 12:49]
+снова майк пропал
+
+R:\xubuntu, [15.08.2021 12:55]
+pulseaudio устройство ввода встроенный микрофон
+
+R:\xubuntu, [20.08.2021 10:50]
+sudo apt-get install buildtorrent
+
+для удаления «sudo apt autoremove»
+
+R:\xubuntu, [02.09.2021 19:38]
+минт мэйтт
+
+R:\xubuntu, [02.09.2021 22:35]
+снижение нагрузки на 
+озу
+killall -9 firefox google-chrome google-chrome-stable chromium-browser
+
+проц
+gsettings set org.gnome.desktop.interface clock-show-seconds false
+
+кик анимации
+sudo apt install gnome-tweaks
+gnome-tweaks
+
+R:\xubuntu, [20.09.2021 09:16]
+sudo nano /etc/pulse/default.pa
+load-module module-echo-cancel source_name=logitechsource
+set-default-source logitechsource
+
+R:\xubuntu, [22.09.2021 19:30]
+sudo apt install mencoder
+
+R:\xubuntu, [26.09.2021 14:15]
+sudo apt install unrar
+
+R:\xubuntu, [26.09.2021 14:15]
+$ unrar команда опции архив файлы путь_для_расспаковки
+
+R:\xubuntu, [26.09.2021 14:17]
+Основной смысл работы утилиты уже понятен, но рассмотрим ее параметры подробнее:
+
+    e - распаковать архив;
+    l - вывести список файлов внутри архива;
+    p - вывести распакованный файл в стандартный вывод;
+    t - проверить архив;
+    v - вывести подробную информацию про архив;
+    x - извлечь файлы, сохраняя полный путь внутри архива.
+
+Опции настраивают поведение утилиты, рассмотрим основные опции, которые могут вам понадобиться:
+
+    -ad - добавить имя архива к пути распаковки;
+    -ai - игнорировать атрибуты файлов;
+    -inul - не выводить сообщения об ошибках;
+    -p - указать пароль архива;
+    -sl - распаковывать только файлы, меньше указанного размера;
+    -u - обновить уже распакованные файлы;
+    -y - отвечать y на все вопросы;
+    -x - не распаковывать указанные файлы;
+    -ts - сохранять временную метку исходных файлов.
+
+R:\xubuntu, [05.10.2021 16:57]
+https://rutracker.org/forum/viewtopic.php?t=5204355#run
+
+R:\xubuntu, [05.10.2021 22:07]
+sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install -y wine-development && sudo apt remove -y wine-development
+ra3
+
+R:\xubuntu, [06.10.2021 13:04]
+virtualbox
+1. создать виртуальную машину
+2. примонтировать к машине инсталяшку и поставить ОСь
+3. какие-то танци с бубном установка мой пк — vb guest во имя разрешения
+4. устройства — подключить образ — общие папки (выбираем папку с хоста и ставим галку авто монтирование)
+5. мой пк — папка с хоста появилась внизу — заходим находим ставим игру
+
+R:\xubuntu, [21.10.2021 09:18]
+apt install htop
