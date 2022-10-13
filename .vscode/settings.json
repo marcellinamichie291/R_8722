@@ -3,5 +3,6 @@
         "markdown",
         "r _"
     ],
-    "java.help.shareDiagnostics": true
+    "java.help.shareDiagnostics": true,
+    "cmake.configureOnOpen": true
 }

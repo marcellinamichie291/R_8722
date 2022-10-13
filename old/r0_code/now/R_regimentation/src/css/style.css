@@ -1,0 +1,190 @@
+/* 99CCCC 66CCCC 	339999 	669999 	006666 	336666 */
+
+/* база */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #000; */
+}
+body {
+  font: .75rem Roboto, Arial;
+  display: block;
+}
+
+/* цвета */
+.r_listProjects-project{}
+.r_listProjects-project-heading{}
+.r_elementProject-element {}
+.r_elementProject-element-heading{}
+.r_data{}
+
+body {
+  color: #ffffff;
+}
+.r_list, .r_data {
+  background-color: #006666;
+}
+.r_listProjects-project-icon{
+  background-color: #66CCCC;
+}
+.r_elementProject{
+  background-color: #336666;
+}
+.r_list-iconCreate{
+  color: #66CCCC;
+}
+.r_elementProject-element-icon{
+  background-color: #66CCCC;
+}
+.r_content{
+  background-color: #339999;
+}
+.r_listOnClick {
+  background-color: #99CCCC;
+}
+.r_listOnClick > .r_listProjects-project-heading {
+  color: #006666;
+}
+.r_listOnClick > .r_listProjects-project-icon {
+  background-color: #006666;
+}
+
+
+/* блоки 0 */
+
+.r_list{
+  /* padding-top: 10px; */
+}
+.r_list-Create {
+  height: 50px;
+  margin-top: -5px;
+}
+.r_list-iconCreate {
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 25px;
+  text-align: center;
+}
+.r_list-headingCreate{
+  text-align: center;
+  margin-top: -10px;
+}
+
+.r_listProjects {
+  display: block;
+  width: 70px;
+}
+.r_listProjects-project {
+  height: 60px;
+  padding: 10px;
+}
+.r_listProjects-project-icon {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.r_listProjects-project-heading {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.r_createList {
+  padding: 10px;
+}
+.r_createList-header {
+  width: 100%;
+}
+
+.r_createList-label {}
+.r_createList-btnIcon {}
+
+.r_elementProject {
+  width: 300px;
+  height: 100vh;
+}
+.r_elementProject-element {
+  display: flex;
+  padding: 10px;
+}
+.r_elementProject-element-icon{
+  /* border: 1px solid #000; */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-content: left;
+}
+.r_elementProject-element-heading{
+  font-weight: bold;
+  display: inline-block;
+}
+
+.r_elementProject-OnClick{
+  background-color: #99CCCC;
+}
+.r_elementProject-OnClick > .r_elementProject-element-heading {
+  color: #006666;
+}
+.r_elementProject-OnClick > .r_elementProject-element-icon {
+  background-color: #006666;
+}
+
+
+.r_content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.r_createTask{
+  height: 10%;
+  padding: 10px;
+  width: 100%;
+}
+.r_createTask-input{
+  width: 100%;
+}
+.r_content-main{
+  padding: 10px;
+  height: 90%;
+}
+
+.r_data{
+  width: 40%;
+}
+/* положение */
+
+.r_container {
+  display: flex;
+}
+/* просмотри про дисплейфлекс */
+/* примени */
+
+
+
+.r_content-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+}
+.r_content-main-task{
+  width: 33.33%;
+  border: 1px solid #006666;
+  padding: 10px;
+}
+  .r_content-main-row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+    /* .r_content-main-task-input
+      .r_content-main-task-input-checkbox
+    .r_content-main-task-header
+    .r_content-main-task-btnDelete */
+  /* .r_content-main-row2 */
+    /* .r_content-main-row2-details */
+    /* .r_content-main-row3-details-confirm */
+  /* .r_content-main-row3 */
+    /* .r_content-main-row3-dateTime */
+    /* .r_content-main-row3-dateTime-confirm */

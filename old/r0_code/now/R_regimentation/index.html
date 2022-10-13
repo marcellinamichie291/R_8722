@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+  <div class="r_container">
+    <div class="r_list">
+
+      <div class="r_list-Create">
+        <span class="r_list-iconCreate">+</span>
+        <p class="r_list-headingCreate">
+          Create
+        </p>
+      </div>
+    
+      <nav class="r_listProjects">
+        <div class="r_listProjects-project">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            Regimentation
+          </p>
+        </div>
+        <div class="r_listProjects-project">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            Plan
+          </p>
+        </div>
+        <div class="r_listProjects-project">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            Тайминги
+          </p>
+        </div>
+        <div class="r_listProjects-project r_listOnClick">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            ToDoList
+          </p>
+        </div>
+        <div class="r_listProjects-project">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            Logs
+          </p>
+        </div>
+        <div class="r_listProjects-project">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            ОтчётБлог
+          </p>
+        </div>
+        <div class="r_listProjects-project">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            Ритуалы
+          </p>
+        </div>
+        <div class="r_listProjects-project">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            R_comedy
+          </p>
+        </div>
+        <div class="r_listProjects-project">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            R_coding
+          </p>
+        </div>
+        <div class="r_listProjects-project">
+          <div class="r_listProjects-project-icon"></div>
+          <p class="r_listProjects-project-heading">
+            R_numb
+          </p>
+        </div>
+      </nav>
+  
+    </div>
+
+
+    <section class="r_elementProject">
+      <div class="r_createList">
+        <input type="text" class="r_createList-header"/>
+        <button class="r_createList-header">Заголовок</button>
+        <label class="r_createList-label"></label>
+      </div>
+      <div class="r_createList">
+        <button class="r_createList-btnIcon">Иконка</button>
+      </div>
+      <div class="r_elementProject-element r_elementProject-OnClick">
+        <div class="r_elementProject-element-icon"></div>
+        <p class="r_elementProject-element-heading">
+          Offline
+        </p>
+      </div>
+    </section>
+
+    <section class="r_content">
+      <div class="r_createTask">
+        <input type="text" class="r_createTask-head" placeholder="Загоовок" />
+        <input type="text" class="r_createTask-desk" placeholder="Описание" />
+        <input type="text" class="r_createTask-dead" placeholder="Сроки" />
+        <button class="r_createTask-btn">Создать</button>
+        <label></label>
+      </div>
+      
+      <h3>Дано</h3>
+      
+      <div class="r_content-main">
+        <div class="r_content-main-task">
+          <div class="r_content-main-row1">
+            <input type="checkbox" class="r_content-main-task-input-checkbox-head" />
+            <input 
+              type="text" 
+              class="r_content-main-task-input-head" 
+              placeholder="Заголовок" 
+              value="${}" 
+              readonly 
+            />
+            <button class="r_content-main-task-btnDone">жопиздан</button>
+          </div>
+          <div class="r_content-main-row2">
+            <input type="checkbox" class="r_content-main-task-input-checkbox-desk" />
+            <input 
+              type="text" 
+              class="r_content-main-row2-details" 
+              placeholder="Описание задачи" 
+              value="${}" 
+              readonly
+            />
+          </div>
+          <div class="r_content-main-row3">
+            <input type="checkbox" class="r_content-main-task-input-checkbox-dead" />
+            <input 
+              type="text" 
+              class="r_content-main-row3-dateTime" 
+              placeholder="Сроки задачи" 
+              value="${}"
+            />
+          </div>
+          <button class="r_content-main-task-btnDelete">Delete</button>
+        </div>
+      </div>
+
+      <h3>Исполненное</h3>
+      
+      <div class="r_contentDone">
+        <div class="r_content-main-task">
+          <input 
+            type="text" 
+            class="r_content-main-task-input-head" 
+            placeholder="Заголовок" 
+            value="Purge" 
+            readonly 
+          />
+          <input 
+            type="text" 
+            class="r_content-main-row2-details" 
+            placeholder="Описание задачи" 
+            value="Душ\Кухня\Полы\Верха" 
+            readonly
+          />
+          <input 
+            type="text" 
+            class="r_content-main-row3-dateTime" 
+            placeholder="Сроки задачи" 
+            value="25.6.22 14:00 - 15:00"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <section class="r_data">
+    </section>
+  </div>
+
+</body>
+
+</html>
+
