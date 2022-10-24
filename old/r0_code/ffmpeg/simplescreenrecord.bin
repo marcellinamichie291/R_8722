@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+STATE_FILE=/tmp/simplescreenrecord.state
+
+if [ -f $STATE_FILE ]
+then
+    PID=$(head -1 $STATE_FILE)
+    FILEPATH=$(tail -1 $STATE_FILE)
+    rm $STATE_FILE
+
+    kill -INT $PID
+    notify-send -a "Simple Screen Record" "Screencast has been saved to $FILEPATH" -u normal
+
+    exit 0
+fi
+
+AREA=$(slop)
+WXH=$(echo $AREA | sed -E 's_(.*)x(.+)\+(.+)\+(.+)_\1x\2_g')
+OFFSET=$(echo $AREA | sed -E 's_(.*)x(.+)\+(.+)\+(.+)_\+\3,\4_g')
+FILEPATH=$HOME/Videos/$(date +%Y-%m-%d_%H:%M:%S)-capture.mp4
+
+ffmpeg \
+    -f x11grab \
+    -video_size ${WXH} \
+    -framerate 60 \
+    -i :0.0${OFFSET} \
+    -vcodec libx264 \
+    -preset faster \
+    -crf 23 \
+    -pix_fmt yuv444p \
+    $FILEPATH &
+
+echo $! > $STATE_FILE
+echo $FILEPATH >> $STATE_FILE

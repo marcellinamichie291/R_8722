@@ -1,0 +1,36 @@
+ffmpeg -framerate 30 -f x11grab -r 10 -s 1366x768 -i :0.0+0,0 -f pulse -ac 2 -ar 44100 -i default -vcodec libx264 -preset ultrafast -c:a aac -b:a 96k -f flv "rtmp://a.rtmp.youtube.com/live2/ya9c-4q7s-tjks-617s-6trt"
+
+
+склад, [24.10.22 23:27]
+[В ответ на mva]
+запускаю стрим в ю2б вот таким макаром
+ffmpeg -framerate 30 -f x11grab -r 10 -s 1366x768 -i :0.0+0,0 -f pulse -ac 2 -ar 44100 -i default -vcodec libx264 -preset ultrafast -c:a aac -b:a 96k -f flv "rtmp://a.rtmp.youtube.com/live2/${1}"
+
+а как до кучи, сказать ему, чтобы произвел захват окна браузера или блокнота?
+п.с. чтобы при трансляции можно было открывать другие окна и это не отражалось в трансляции.
+п.с.2. я нашел видео по теме но оно 40минут), мож кто подскажет быстрее)
+
+склад, [24.10.22 23:27]
+https://www.youtube.com/watch?v=-GYlQeldEms
+
+склад, [24.10.22 23:37]
+[Переслано от Evgeniy Pichuzhkin]
+Так у тебя же вон геометрия задаётся
+-s и -i
+
+склад, [24.10.22 23:37]
+[Переслано от Evgeniy Pichuzhkin]
+Условным slop выдели окно, передай геометрию в скрипт
+
+склад, [24.10.22 23:37]
+[Переслано от Evgeniy Pichuzhkin]
+Я так костыльный захват экрана делал
+
+склад, [24.10.22 23:37]
+[Переслано от Evgeniy Pichuzhkin]
+[В ответ на склад]
+[ Файл : simplescreenrecord.bin ]
+
+склад, [24.10.22 23:37]
+[Переслано от Evgeniy Pichuzhkin]
+Бога ради не бейте лучше обоссыте
