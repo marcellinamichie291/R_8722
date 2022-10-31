@@ -1,0 +1,17 @@
+:set
+
+two mode
+	normal
+	insert
+	visual
+
+C+r - 
+C+u - undo
+
+Ww - jump to the next word
+Bb - jump to the prev word
+
+dw - del word
+d - del char
+
+d2w - del two word

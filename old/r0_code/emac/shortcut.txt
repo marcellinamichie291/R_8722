@@ -1,0 +1,52 @@
+orgmod
+
+emacs lsp mode 
+
+Alt+x
+
+Ctrl+x t t 
+	tree
+	treeemac-ind[ent-guide-mode]
+
+Автосейв релоад
+	detection	
+
+компиляция Си 
+M-x compile
+	gcc file.c
+
+M-x shell
+	./a.out
+
+C-x d 	[open-directory]
+
+C-v	[move-down-screen]
+A-v	[move-up-screen]
+
+A-w	[copy]
+C-y	[paste]
+C-w	[cut]
+
+C-x C-s [save]
+C-x C-w [save-as]
+
+C-g 	[kill-move-now]
+
+C-x C-c [close]
+
+//Move
+C-p/n/b/f  [4-arrow]
+A-b/f  [left-right-arrow]
+C-a/e 	   [to-start/to-end]
+A-a/e 	   [to-start/to-end](paragraf)
+
+C-u 8 C-p/n/b/f/a/e  [move-on-8-step]
+C-u 8 A-a/e [move-on-8-paragraf]
+
+C-x d (find .emacs.d)
+    C-x C-f (init.el) [open file]
+	(add-to-list 'custom-theme-load-path "~/.emacs.d/theme")
+	(load-theme 'dracula t)
+
+
+A-x shell   [terminal]
