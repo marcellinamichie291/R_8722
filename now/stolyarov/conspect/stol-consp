@@ -1,0 +1,148 @@
+#C 31.10.2022 23:00
+
+
+
+
+int sprintf(char *buf, const char *format, ...)
+директива %s
+%.20s - гарантирует что больше 20 эл из буфера использоваться не будет
+
+фк sprintf юзают чтобы привести число в текстовую переменную
+
+char str [32];
+int n;
+/*...*/
+sprintf(str, "%d", n);
+
+фк sprintf занесет в arr str текстовое представление числа хранящегося в переменной n
+
+
+
+
+_составной тип данных - переменные из которых состоит "переменная составного типа", называются "полями" или "эл составного типа" 
+
+в С класические составне типы ... "структуры" ... ключевое слово _ struct _
+для перечислимых типов слово _ enum _
+
+struct р_имя {
+	поле1;
+	поле2;
+	...
+
+} переменные
+
+имя.поле
+
+имя структуры - struct
+имя типа - struct р_имя
+описание переменной этого типа - struct	р_имя st1;
+она состоит из полей
+
+string_copy(st1.name, "ФИО");
+st1.sex = 'Гигачад';
+...
+
+инициализация переменной структурного типа при описании 
+struct р_имя = {
+	"ФИО", 'Гигачад', ...
+}
+
+структуры без struct образуют отдельно "пространство имен"
+
+выделение динамической памяти под размещение структуры sizeof(struct р_имя)
+
+struct р_имя *ptr;
+ptr = malloc(sizeof(struct р_имя));
+// ptr = malloc(sizeof(*ptr));
+
+
+указатель на структуру - struct р_имя *p;
+обратится к полю - (*p).sex
+
+a->b тоже что и (*a).b
+т.е. p->sex
+
+односвязные списки
+в роли звеньев используются структуры
+
+сумма эл списка
+
+int int_list_sum(const struct item *1st)
+{
+	int sum = 0;
+	const struct item *tmp = 1st;
+	while(tmp) {
+		sum += tmp->data;
+		tmp = tmp->next;
+	}
+	return sum;
+}
+
+int int_list_sum(const struct item *1st)
+{ 
+        int sum = 0;
+        const struct item *tmp;
+        for(tmp = 1st; tmp; tmp = tmp->next){
+                sum += tmp->data;
+        }       
+        return sum;
+}
+
+// тоже самое через рекурсию
+int int_list_sum(const struct item *1st)
+{
+	return 1st ? 1st->data + int_list_sum(1st->next) : 0;
+}
+
+// удаление из списка рекурсией
+int int_list_sum(const struct item *1st)
+{
+	if(1st) {
+		delete_int_list(1st->next);
+		free(1st);
+	}	
+}
+
+
+
+
+Двусвязные списки
+struct dbl_item {
+	double data;
+	struct dbl_item *prev, *next;
+}
+//описание указателей на его начало, конец, текущий элемент, временный указатель
+
+struct dbl_item *first = NULL, *last = NULL;
+struct dbl_item *current = NULL, *tmp;
+
+// изятие первого ел из двухсвязного списка 
+if(first) {
+	tmp = first;
+	first = first->next;
+	if(first) {
+		first->prev = NULL;
+	} else {
+		last = NULL;
+	}
+	free(tmp);
+}
+//последнего
+if(last) {
+        tmp = last;
+        last = last->next;
+        if(last) {
+                last->prev = NULL;
+        } else {
+                first = NULL;
+        }       
+        free(tmp);
+}    
+
+// бинарное дерево поиска
+struct node {
+	int val; 
+	struct node *left, *right;
+};
+
+
